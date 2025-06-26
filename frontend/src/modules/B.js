@@ -8,11 +8,11 @@ export default function B(){
     }
     const [value, setValue] = useState(50)
     const handleSliderChange = (newValue) => {
-        setValue(newValue); // スライダーの値を更新
+        setValue(newValue);
     };
     return(
         <>
-            <p>B: {value}</p>
+            <p>B</p>
             <div className="w-full bg-green-600">
                 <div className="w-full py-2 text-center">くそおもろいぶん</div>
                 <div className="w-full py-2 bg-green-200">
@@ -33,6 +33,7 @@ export default function B(){
                         </Slider.Root>
                         <span>not real</span>
                     </div>
+                    <p className="text-center">{value}</p>
                     <div className="flex justify-center">
                         <button onClick={clicker} className="border border-gray-400">DONE!</button>
                         <button className="border border-gray-400">Skip </button>
