@@ -6,7 +6,8 @@ CORS(app)
 
 @app.route("/a/question")
 def a_question():
-    return "おもろいぶん"
+    out_text = "おもろい"
+    return out_text
 
 @app.route("/a/answer", methods=["POST"])
 def a_ansser():
@@ -18,7 +19,8 @@ def a_ansser():
 
 @app.route("/b/question")
 def b_question():
-    return "おもろいのかわからんぶん"
+    out_text = "おもろいかおもんないか"
+    return out_text
 
 @app.route("/b/answer", methods=["POST"])
 def b_answer():
